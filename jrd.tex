@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Jared Dunbar's Resume %
+%                       %
+% Source Credits:       %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage[sfdefault]{plex-sans}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+% Custom Commnads
+
+% items under categories
+\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+
+% Subject Headings (Work Experience, Education, etc.)
+\newcommand{\resheading}[1]{{\large {\textbf{#1 \vphantom{p\^{E}}}}}\vspace{-3pt}}
+
+% Top half of big headings
+\newcommand{\topheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+\end{tabular*}}
+
+% Bottom half of big headings
+\newcommand{\bottomheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Jared Dunbar}\\
+Email: jrddunbr@gmail.com & Website: https://ja13.org\\
+Cell: (860) 578-6821 & GitHub: https://github.com/jrddunbr\\
+\end{tabular*}
+
+\vspace{0.1in}
+
+\resheading{Professional Skills}
+\begin{itemize}
+\item[] Server and Network Engineering and Administation, Cloud (AWS/Azure)
+\vspace{-8pt}
+\item[] Cybersecurity, Scripting Lanuagages, Team Player, Leadership
+\end{itemize}
+
+\resheading{Education}
+\begin{itemize}
+\item[]
+	\topheading{Clarkson University}{Potsdam, NY}
+	\bottomheading{B.S. Computer Science, Minors in IT \& Communications}{August 2015 - May 2019}
+\end{itemize}
+
+\resheading{Work Experience}
+\begin{itemize}
+\item[]
+	\topheading{Clarkson University - Office of Information Technology}{Potsdam, NY}
+	\bottomheading{Server and Network Engineer}{September 2016 - March 2019}
+	\begin{itemize}
+		\resitem{Install fiber patches, run fiber optics, configure Juniper switches, convert Cisco IOS switch configurations to Juniper switch configurations, as part of a network upgrade}
+    \resitem{Work in data-centers, connect sensor arrays, install hardware, take inventory}
+		\resitem{Integrate Linux systems with Windows Active Directory}
+    \resitem{Write internal monitoring software to enhance Nagios monitoring software suite, as a major component of a new end-user facing status page}
+	\end{itemize}
+
+\item[]
+	\bottomheading{Helpdesk Technician}{}
+	\begin{itemize}
+		\resitem{Image computers, install software and configure licensing}
+		\resitem{Work one-on-one with clients, resolve hardware and software problems}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Additional Technical Experience}
+\begin{itemize}
+\item[]
+	\topheading{Clarkson University}{Potsdam, NY}
+	\bottomheading{Clarkson Open Source Institute (COSI)}{August 2015 - June 2019}
+	\begin{itemize}
+		\resitem{Held the role of Lead System Administrator for over three years, responsible for operating most systems (20+ servers) for day to day operations of 100+ users}
+    \resitem{Lead multiple computer science outreach programs and create cirriculum for the programs, teaching 5-12th grade students to get them interested in STEM fields}
+    \resitem{Manage VM hosts, public FOSS mirror, websites, write extensive documentation}
+    \resitem{Made initial designs, implemented, and operate Juniper and TP-Link networking hardware, using technologies including VLAN's, LACP, STP, SNMP}
+    \resitem{Deploy new 10G fiber hardware, Ubiquity WiFi, IPv6 upgrade, new redundant DHCP and DNS systems, firewalls, VPN's, network deployment servers, PXE}
+		\resitem{Managed budgeting, quoting for new servers, network hardware, end user systems}
+    \resitem{Team Player: works with other system administrators to solve complex problems}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Technical Skills}
+
+\begin{description}
+\item[Languages:]
+Fluent in Python, Java, Kotlin, Familiar with HTML/CSS, Bash, Perl, Rust, LaTeX
+\item[Operating Systems:]
+Fluent System Administration of Ubuntu, CentOS, RHEL, and many other Linux distribuions. Familiar with Junos, Cisco IOS, Microsoft Active Directory
+\item[Software:]
+Fluent with iptables, dhcpd, nginx, systemd services and timers.
+Familiar with SLURM clustering software, Asterisk VoIP Software, apache2, MySQL, sqlite
+
+\end{description}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+& \textit{Standard Resume --- Last Revised July 24th, 2019}\\
+\end{tabular*}
+
+\end{document}
