@@ -12,6 +12,7 @@
 
 \documentclass[letterpaper,12pt]{article}
 
+% IBM Plex Sans Font
 \usepackage[sfdefault]{plex-sans}
 
 %-----------------------------------------------------------
@@ -40,6 +41,7 @@
 
 % items under categories
 \newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+\newcommand{\resitemt}[1]{\item #1 \vspace{-6pt}}
 
 % Subject Headings (Work Experience, Education, etc.)
 \newcommand{\resheading}[1]{{\large {\textbf{#1 \vphantom{p\^{E}}}}}\vspace{-3pt}}
@@ -53,25 +55,47 @@
 % Bottom half of big headings
 \newcommand{\bottomheading}[2]{
 \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-		\textit{#1} & \textit{#2} \\
+		\textit{\textbf{#1}} & \textit{#2} \\
 \end{tabular*}\vspace{-6pt}}
 %-----------------------------------------------------------
 
 \begin{document}
 
+%---------------------------------
+%
+%     FRONT SIDE BEGINS HERE
+%
+%---------------------------------
+
+\begin{center}
+\textbf{\Large Jared Dunbar}
+\end{center}
+\vspace{-0.45cm}
+\noindent\makebox[\linewidth]{\rule{7in}{0.4pt}}
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-\textbf{\Large Jared Dunbar}\\
-Email: jrddunbr@gmail.com & Website: https://ja13.org\\
-Cell: (860) 578-6821 & GitHub: https://github.com/jrddunbr\\
+Email: jrddunbr@gmail.com & Cell: (860) 578-6821\\
+Website: https://ja13.org & GitHub: https://github.com/jrddunbr\\
 \end{tabular*}
 
 \vspace{0.1in}
 
-\resheading{Professional Skills}
+\resheading{Professional Summary}
+
+\begin{flushleft}
+Highly motivated college graduate with Bachelor's Degree in Computer Science and exceptional IT working experiences, communication ability, and problem solving skill set.\\
+\vspace{0.15cm}
+Committed to utilizing a broad knowledge obtained through the college years to facilitate an enterprise to innovate and keep a competitive edge.
+\end{flushleft}
+
+\resheading{Core Qualifications}
 \begin{itemize}
-\item[] Server and Network Engineering and Administation, Cloud (AWS/Azure)
-\vspace{-8pt}
-\item[] Cybersecurity, Scripting Lanuagages, Team Player, Leadership
+\resitemt{Server and Network Engineering and Administration}
+\resitemt{Cloud Computing (AWS/Azure) and Cybersecurity}
+\resitemt{Scripting languages and Software Programming}
+\resitemt{Highly analytical thinking, ability to identify and resolve complex IT problems}
+\resitemt{Strong communication skills, effectively conveys information both verbally and in writing}
+\resitemt{Detail oriented and ability to prioritize multiple concurrent projects}
+\resitemt{Team Player: works with other system administrators and team members to solve complex problems and provide leadership}
 \end{itemize}
 
 \resheading{Education}
@@ -87,8 +111,9 @@ Cell: (860) 578-6821 & GitHub: https://github.com/jrddunbr\\
 	\topheading{Clarkson University - Office of Information Technology}{Potsdam, NY}
 	\bottomheading{Server and Network Engineer}{September 2016 - March 2019}
 	\begin{itemize}
-		\resitem{Install fiber patches, run fiber optics, configure Juniper switches, convert Cisco IOS switch configurations to Juniper switch configurations, as part of a network upgrade}
-    \resitem{Work in data-centers, connect sensor arrays, install hardware, take inventory}
+    \resitem{Helped designing and Deploying fiber network which included running fiber optics, installing fiber patch panels, and certifying the communication links}
+    \resitem{Helped deployment of Juniper switch network, including configuration of Juniper switches and converting from existing Cisco configurations}
+    \resitem{Involved in maintenance of data-centers, deployed environmental sensor arrays to protect infrastructure, installed server and network hardware, keeping equipment inventory to support assets management}
 		\resitem{Integrate Linux systems with Windows Active Directory}
     \resitem{Write internal monitoring software to enhance Nagios monitoring software suite, as a major component of a new end-user facing status page}
 	\end{itemize}
@@ -97,9 +122,22 @@ Cell: (860) 578-6821 & GitHub: https://github.com/jrddunbr\\
 	\bottomheading{Helpdesk Technician}{}
 	\begin{itemize}
 		\resitem{Image computers, install software and configure licensing}
-		\resitem{Work one-on-one with clients, resolve hardware and software problems}
+		\resitem{Work one-on-one with clients to resolve hardware and software problems}
 	\end{itemize}
 \end{itemize}
+
+% FOOTER BEGINS HERE
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+& \textit{Updated August 30th, 2019}\\
+\end{tabular*}
+
+%---------------------------------
+%
+%     REVERSE SIDE BEGINS HERE
+%
+%---------------------------------
+\newpage
 
 \resheading{Additional Technical Experience}
 \begin{itemize}
@@ -108,30 +146,39 @@ Cell: (860) 578-6821 & GitHub: https://github.com/jrddunbr\\
 	\bottomheading{Clarkson Open Source Institute (COSI)}{August 2015 - June 2019}
 	\begin{itemize}
 		\resitem{Held the role of Lead System Administrator for over three years, responsible for operating most systems (20+ servers) for day to day operations of 100+ users}
-    \resitem{Lead multiple computer science outreach programs and create cirriculum for the programs, teaching 5-12th grade students to get them interested in STEM fields}
+    \resitem{Lead multiple computer science outreach programs and create curriculum for the programs, teaching 5-12th grade students to get them interested in STEM fields}
     \resitem{Manage VM hosts, public FOSS mirror, websites, write extensive documentation}
-    \resitem{Made initial designs, implemented, and operate Juniper and TP-Link networking hardware, using technologies including VLAN's, LACP, STP, SNMP}
-    \resitem{Deploy new 10G fiber hardware, Ubiquity WiFi, IPv6 upgrade, new redundant DHCP and DNS systems, firewalls, VPN's, network deployment servers, PXE}
+    \resitem{Designed, implemented, and maintained Juniper and TP-Link networking hardware}
+    \resitem{Deployed new 10G fiber hardware, Ubiquity WiFi, IPv6 upgrade, new redundant DHCP and DNS systems, firewalls, VPN's}
 		\resitem{Managed budgeting, quoting for new servers, network hardware, end user systems}
-    \resitem{Team Player: works with other system administrators to solve complex problems}
 	\end{itemize}
 \end{itemize}
 
-\resheading{Technical Skills}
+\resheading{Additional Technical Skills}
 
 \begin{description}
 \item[Languages:]
 Fluent in Python, Java, Kotlin, Familiar with HTML/CSS, Bash, Perl, Rust, LaTeX
 \item[Operating Systems:]
-Fluent System Administration of Ubuntu, CentOS, RHEL, and many other Linux distribuions. Familiar with Junos, Cisco IOS, Microsoft Active Directory
+Fluent System Administration of Ubuntu, CentOS, RHEL, and many other Linux distributions. Familiar with Junos, Cisco IOS, Microsoft Active Directory
 \item[Software:]
 Fluent with iptables, dhcpd, nginx, systemd services and timers.
-Familiar with SLURM clustering software, Asterisk VoIP Software, apache2, MySQL, sqlite
+Familiar with SLURM clustering software, Asterisk VoIP Software, apache2, MySQL, sqlite, MS Office Suite
+\item[Technologies:]
+802.1Q VLAN's, LACP, STP, SNMP, LDAP, Kerberos
+
+% FOOTER
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+& \textit{Updated August 30th, 2019}\\
+\end{tabular*}
 
 \end{description}
 
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-& \textit{Standard Resume --- Last Revised July 24th, 2019}\\
-\end{tabular*}
+%---------------------------------
+%
+%     END OF RESUME
+%
+%---------------------------------
 
 \end{document}
