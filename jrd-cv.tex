@@ -1,0 +1,285 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Jared Dunbar's CV     %
+%                       %
+% Source Credits:       %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,12pt]{article}
+
+% IBM Plex Sans Font
+\usepackage[sfdefault]{plex-sans}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+% Custom Commnads
+
+% items under categories
+\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+\newcommand{\resitemt}[1]{\item #1 \vspace{-6pt}}
+
+% Subject Headings (Work Experience, Education, etc.)
+\newcommand{\resheading}[1]{{\large {\textbf{#1 \vphantom{p\^{E}}}}}\vspace{-3pt}}
+
+% Top half of big headings
+\newcommand{\topheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+\end{tabular*}}
+
+% Bottom half of big headings
+\newcommand{\bottomheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\singleheading}[2]{
+\vspace{6pt}
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+\end{tabular*}
+\vspace{-3pt}
+}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large Jared Dunbar}
+\end{center}
+\vspace{-0.45cm}
+\noindent\makebox[\linewidth]{\rule{7in}{0.4pt}}
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+Email: jrddunbr@gmail.com & Cell: (860) 578-6821\\
+Website: https://ja13.org & GitHub: https://github.com/jrddunbr\\
+\end{tabular*}
+
+\vspace{0.1in}
+
+\resheading{Professional Summary}
+
+\begin{flushleft}
+Highly enthusiastic college graduate with Bachelor's Degree in Computer Science with exceptional IT working experiences, communication ability, and problem solving skill set.\\
+\vspace{0.22cm}
+Experience with critical Production Linux systems including Red Hat Enterprise Linux.\\
+\vspace{0.22cm}
+Motivated Open Source developer with Project Leader and Forum Moderator Experience
+\end{flushleft}
+
+\resheading{Present Activites and Skills}
+\begin{itemize}
+	\resitem{Kotlin - 2 years (since 2018)}
+	\resitem{Python - 4 years (since 2016)}
+	\resitem{Git - 5 years (since 2015)}
+	\resitem{Java - 6 years (since 2013)}
+	\resitem{RHEL/Fedora/CentOS - 2 years (since 2018)}
+	\resitem{Arch Linux - 5 years (since 2015)}
+	\resitem{Ubuntu - 8 years (since 2012)}
+\end{itemize}
+
+\resheading{Notable Present Projects}
+\begin{itemize}
+	\item[]
+
+	\topheading{Team Leader}{January 2020 - Present}
+	\bottomheading{Electrical Age 2 (Eln2)}{GitHub}
+	\begin{itemize}
+		\resitem{Eln2 is a Minecraft and Vintage Story mod that will allow realistic electrical simulations.}
+		\resitem{The internal engine is based on Modified Nodal Analysis and is relatively accurate.}
+		\resitem{The goal is to create a fun game that is realistic, enjoyable, and educational.}
+		\resitem{The simulator and engine code is seperated from the game code to be usable as a research tool.}
+		\resitem{The source code is MIT licensed which allows for research and commercial re-use of the software.}
+	\end{itemize}
+
+	\singleheading{Self-Taught NixOS}{January 2020 - Present}
+	\begin{itemize}
+		\resitem{Use NixOS as a daily driver alongside Arch Linux}
+		\resitem{Streamline system administration across routers and homelab equipment}
+		\resitem{Take advantage of completely atomic control of the operating system and applications to do on-line changes at production level quality efficiently and bug-free, with effective rollback capabilites}
+	\end{itemize}
+
+\end{itemize}
+
+
+\newpage
+
+
+\resheading{Previous Experiences and Projects}
+\begin{itemize}
+	\item[]
+
+	\topheading{Production Linux System Administrator I}{November 2019 - March 2020}
+	\bottomheading{Mediacom Communications Corporation - IT Operations}{Mediacom Park, NY}
+	\begin{itemize}
+		\resitem{Production Linux Administrator on RHEL servers powering millions of customers}
+		\resitem{Daily monitoring and regular maintenance of multiple monitoring systems}
+		\resitem{24/7 On-Call Rotation experiences - able to handle complex situations in a pinch}
+		\resitem{Multiple successful deployments to critical systems in multiple geographic regions}
+		\resitem{Assist senior system engineers with upgrade planning to production infrastructure}
+		\resitem{Provide highest tier support to application developer teams and engineers}
+		\resitem{Work efficiently with remote teams and system engineers to solve problems}
+		\resitem{Inventory management - write scripts to help gather information about servers from various environments and process it into one large concise inventory database}
+		\resitem{Organize documentation into a quickly accessible format and archive old data}
+		\resitem{Created new internal website from scratch to organize links and contacts}
+	\end{itemize}
+
+	\singleheading{Electrical Age}{November 2017 - December 2019}
+	\begin{itemize}
+		\resitem{Started by making pull requests to fix bugs that annoyed me}
+		\resitem{Became community member in remarkably good standing, providing support}
+		\resitem{Worked with friends to develop new versions after main developers ceased releasing updates}
+		\resitem{This project has ceased development in order to do a complete rewrite, named Eln2}
+	\end{itemize}
+
+	\vspace{6pt}
+
+	\topheading{B.S. Computer Science, Minors in IT \& Communications}{August 2015 - May 2019}
+	\bottomheading{Clarkson University}{Potsdam, NY}
+
+	\vspace{6pt}
+
+	\topheading{Head System Engineer}{Clarkson University}
+	\bottomheading{Clarkson University - EE Compute Cluster}{November 2017 - May 2019}
+	\begin{itemize}
+		\resitem{Designed, installed, configured, and maintained multiple Fedora systems to run specialized cluster software using Infiniband networking hardware and SLURM cluster management software, including deployment scripts for machines}
+		\resitem{Reimplemented the entire system detailed above with CentOS after testing period.}
+	\end{itemize}
+
+	\topheading{Lead System Administrator}{August 2015 - May 2019}
+	\bottomheading{Clarkson Open Source Institute (COSI)}{Potsdam, NY}
+	\begin{itemize}
+		\resitem{Held the role of Lead System Administrator for over three years, responsible for operating most systems (20+ servers) for day to day operations of 100+ users}
+    \resitem{Lead multiple computer science outreach programs and create curriculum for the programs, teaching 5-12th grade students to get them interested in STEM fields}
+    \resitem{Manage VM hosts, public FOSS mirror, websites, write extensive documentation}
+    \resitem{Designed, implemented, and maintained Juniper and TP-Link networking hardware}
+    \resitem{Deployed new 10G fiber hardware, Ubiquity WiFi, IPv6 upgrade, new redundant DHCP and DNS systems, firewalls, VPN's}
+		\resitem{Managed budgeting, quoting for new servers, network hardware, end user systems}
+		\resitem{Graciously providing support to students who are current students. I provide industry standard advice on how to configure the systems and answering technical questions about the configurations}
+	\end{itemize}
+
+	\newpage
+
+	\topheading{Helpdesk Linux Technician}{January 2019 - March 2019}
+	\bottomheading{Clarkson University - Office of Information Technology}{Potsdam, NY}
+	\begin{itemize}
+		\resitem{As Helpdesk Linux Technican, I was in charge of installing a few RHEL and Ubuntu systems for research professors who wanted production quality Linux environments.}
+	\end{itemize}
+
+	\topheading{Server and Network Engineer}{January 2018 - January 2019}
+	\bottomheading{Clarkson University - Office of Information Technology}{Potsdam, NY}
+	\begin{itemize}
+    \resitem{Helped designing and Deploying fiber network including running fiber optics, installing fiber patch panels, and certifying the communication links}
+    \resitem{Helped deployment of Juniper switch network, including configuration of Juniper switches and converting from existing Cisco configurations}
+    \resitem{Involved in maintenance of data-centers, deployed environmental sensor arrays to protect infrastructure, installed server and network hardware, keeping equipment inventory to support assets management}
+		\resitem{Integrate Linux systems with Windows Active Directory}
+    \resitem{Wrote internal monitoring software to enhance Nagios monitoring software suite, as a major component of a new end-user facing status page}
+	\end{itemize}
+
+	\topheading{TV Studio Systems Engineer}{January 2018 - March 2018}
+	\bottomheading{Clarkson University - TV Studio}{Potsdam, NY}
+	\begin{itemize}
+		\resitem{Re-designed entire television station after multiple critical hardware failures}
+		\resitem{Did file recovery and attempted system repair to multiple video systems}
+		\resitem{Worked with IT Department to coordinate streaming hardware and firewall exceptions for ESPN boradcasts}
+		\resitem{Created ingenuitive solutions to complex problems with limited tools and hardware}
+		\resitem{Operated recording for Clarkson Ted X conference.}
+		\resitem{Learned how to work with various video systems as well as balanced audio}
+	\end{itemize}
+
+	\topheading{Helpdesk Technician}{September 2016 - December 2018}
+	\bottomheading{Clarkson University - Office of Information Technology}{Potsdam, NY}
+	\begin{itemize}
+		\resitem{Tasked with installing computers, debugging technical issues on site, and dealing with classroom emergencies.}
+		\resitem{Designed and implemented protocol documents for imaging and installing software on computers, to coordinate between multiple student workers who never see one another}
+		\resitem{Front desk helpdesk support for many walk in's, including students and professors alike.}
+	\end{itemize}
+
+	\newpage
+
+	\singleheading{First Robotics FRC Team 3461}{2012-2015}
+	\begin{itemize}
+		\resitem{Head Programmer in 2015 season}
+		\resitem{Designed vision system for robot using LabVIEW in 2014 season}
+		\resitem{Created standard re-usable library for robots in 2013 season}
+	\end{itemize}
+
+	\singleheading{FLL Mentor}{2011-2014}
+	\begin{itemize}
+		\resitem{Taught local FLL team how to program Lego NXT's and EV3's}
+		\resitem{Showed students how to create solid designs that provided maximum build flexibility}
+	\end{itemize}
+
+	\topheading{Retail Associate}{Spring 2014 and 2015}
+	\bottomheading{White Flower Farm}{Morris, CT}
+	\begin{itemize}
+		\resitem{First experience with working one-on-one with customers}
+		\resitem{Helped move heavy objects, water plants}
+		\resitem{Handled checkout, fronted merchandise, connected customers with knowledgable plant specialists when I did not know the answer}
+	\end{itemize}
+
+	\singleheading{Lead Robot Designer, Programmer}{2011, 2012 Competitions}
+	\begin{itemize}
+		\resitem{Programmed Lego NXT robots (custom designed) to complete three autonomous tasks}
+		\resitem{In 2010, was the best robot there, among dozens of international college EE teams}
+		\resitem{In 2011, won IEEE Award for Excellence, and Edward T. Preneta RoboWaiter Award for Best CT team}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Additional Technical Skills}
+
+\begin{description}
+
+\item[Programming]
+
+	\resitem{Familiar with HTML/CSS, Bash Scripting, Perl, Rust, LaTeX, Nix, ansible, and LabVIEW}
+
+\item[Software]
+
+	\resitem{Experienced with iptables, dhcpd, nginx, systemd services and timers, Red Hat Satellite, Nagios XI, and Nagios Core}
+	\resitem{Worked with SLURM cluster, Asterisk VoIP, apache2, MySQL, sqlite, ansible}
+
+\item[Technologies]
+
+  \resitem{Experience with 802.1Q VLAN's, LACP, STP, SNMP, LDAP, Kerberos, DNS, DHCP}
+
+% FOOTER
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+& \textit{Updated April 13th, 2020}\\
+\end{tabular*}
+
+\end{description}
+
+%---------------------------------
+%
+%     END OF CV
+%
+%---------------------------------
+
+\end{document}
